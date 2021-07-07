@@ -1,0 +1,123 @@
+
+GET http://localhost:4000/app/signIn 
+
+
+
+
+
+
+###
+
+POST http://localhost:4000/app/signup 
+Content-Type: application/json 
+
+{
+    "numerotel":"0663031010",
+    "adresse":"41 rue de l'ecusserie",
+    "email":"oussama@gmail.com",
+    "password":"ww",
+    "token":"6ca49dd55d8e76512ce175ef46605bffb7f11da08f5be6a1ee09a7b3f65341a19b4c6b4369e26ae21434212c574e3883a3db3026b567ddbf8e971ff919ae3750"
+}
+
+###
+POST http://localhost:4000/app/login
+Content-Type: application/json 
+
+{
+    "email":"oussama@gmail.com",
+    "password" : "ww"
+}
+
+###
+POST http://localhost:4000/app/visite
+Content-Type:  application/json 
+
+{
+            "Localisation":"33.25.225.12",
+            "NumRuche":"2",
+            "Date":"02/04/2021",
+            "CR":"good good bad hadle lopem aposem", 
+            "Nourriture":"oui",
+            "PonteDuJour" :"kjdhqsiudhg",
+            "PresenceDeCR" :"fdqjhhsqgbjifudhkbq",
+            "ForceDeColonie":"9",
+            "Poids" :"17",
+            "Comportement" :"  agressive ",
+            "TailleCouvain":"25",
+            "EtatRuche":"good",
+            "NbrVaroa" :"32",
+            "Commentaire":"kdjsqhdiuzsqjhdousqihdpsqohdazsquodhsqui",
+            "ActionRéalisé" :"lskdfjndsojkfndsoifj",
+            "actionAPrevoir" :"mlskdjfldskmjifjdsojkifjds"
+}
+
+###
+GET http://localhost:4000/app/visite
+
+
+
+###
+GET http://localhost:4000/app/verifytoken
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im91c3NhbWFAZ21haWwuY29tIiwicGFzc3dvcmQiOiJ3dyIsImlhdCI6MTYxNzU0NjI0N30.8J7dGmjajorgrE8zL8QXxL6U7i3CGpx6zMwrD89Cmuo
+
+###
+POST http://localhost:4000/app/rouche
+Content-Type: application/json 
+
+{   "Rucher":"1",
+    "NumRuche":"2",
+    "TypeRuche":"gfdsfdsfvds",
+    "DateMiseEnService":"04/27/2021",
+    "NumReine":"215",
+    "NumCadre" :"21",
+    "Hausse":"sh", 
+    "GrilleAReine":"long ",
+    "PlaqueDeFond":"ayayalsiuzsqahdjkuzsq",
+    "Nourriseur":"slcdkqlkdnsqkdnjsq"
+}
+
+###
+GET http://localhost:4000/app/rouche 
+Content-Type: application/json
+
+
+{
+    "Rucher":"1"
+}
+
+
+###
+POST http://localhost:4000/app/rucher
+Content-Type: application/json 
+
+{
+ "NumAPI":"1",
+ "Localisation":"Deauville",
+ "NumRucher":"4"
+
+
+}
+
+####
+GET http://localhost:4000/app/rucher
+Content-Type: application/json 
+
+{
+    "NumRucher":"2"
+}
+
+
+###
+POST http://localhost:4000/app/Reine 
+Content-Type: application/json 
+
+{
+      "NumReine":"RN22", 
+      "CodeGénéalogique":"ES452", 
+      "Marquée":"Oui", 
+      "Clippée":"Non",
+      "DateNaissance":"03/05/2018"
+}
+
+###
+GET http://localhost:4000/app/Reine 
